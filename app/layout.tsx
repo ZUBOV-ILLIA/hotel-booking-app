@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ClerkLoaded, ClerkProvider } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -17,11 +18,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-gray-600`}>
-        <Header />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${inter.className} flex min-h-dvh flex-col bg-gray-600`}
+        >
+          <ClerkLoaded>
+            <Header />
+
+            <main className="container mx-auto grow text-white">
+              {children}
+            </main>
+          </ClerkLoaded>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

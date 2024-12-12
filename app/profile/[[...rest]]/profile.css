@@ -1,0 +1,13 @@
+.acc-settings-btn .cl-userButtonTrigger {
+    margin-right: -145px;
+    padding: 8px;
+    width: 218px;
+    justify-content: start;
+    border-radius: 4px;
+    border: 1px solid #ffffff57;
+}
+
+.acc-settings-btn .cl-avatarBox {
+    height: 52px;
+    width: 52px;
+}
