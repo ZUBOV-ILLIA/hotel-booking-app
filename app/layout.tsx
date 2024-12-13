@@ -26,7 +26,7 @@ export default function RootLayout({
           <ClerkLoaded>
             <Header />
 
-            <main className="container mx-auto grow py-6 text-white">
+            <main className="container mx-auto flex grow flex-col py-6 text-white">
               {children}
             </main>
           </ClerkLoaded>

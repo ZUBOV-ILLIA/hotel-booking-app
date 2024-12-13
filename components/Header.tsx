@@ -5,7 +5,7 @@ import UserAuth from "@/components/UserAuth";
 function Header() {
   return (
     <header className="container mx-auto border-b border-gray-400 py-2">
-      <nav>
+      <nav className="px-5">
         <ul className="flex justify-between">
           <li>
             <Link
