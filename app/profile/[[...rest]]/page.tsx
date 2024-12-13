@@ -1,18 +1,23 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import "./profile.css";
+import UserInfo from "@/components/profile/UserInfo";
 
 export default function Page() {
   return (
-    <div>
-      <h2 className="text-4xl">Profile page</h2>
+    <div className="flex flex-col">
+      <h2 className="self-center text-4xl">Profile page</h2>
 
-      <SignedIn>
-        <div className="acc-settings-btn flex items-center">
-          <UserButton />
-          <span>Account Settings</span>
-        </div>
-      </SignedIn>
+      <Suspense fallback={<div>Loading...</div>}>
+        <SignedIn>
+          <div className="acc-settings-btn my-4 flex items-center self-end">
+            <UserButton />
+            <span>Account Settings</span>
+          </div>
+        </SignedIn>
+      </Suspense>
+
+      <UserInfo />
     </div>
   );
 }

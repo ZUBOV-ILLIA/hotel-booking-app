@@ -13,12 +13,12 @@ function UserAuth() {
     <div className="flex gap-4">
       <SignedOut>
         <SignInButton mode="modal">
-          <span className="flex rounded-md bg-gray-800 px-3 py-2 text-white">
+          <span className="flex cursor-pointer rounded-md bg-gray-800 px-3 py-2 text-white">
             Sign In
           </span>
         </SignInButton>
         <SignUpButton mode="modal">
-          <span className="flex rounded-md bg-gray-800 px-3 py-2 text-white">
+          <span className="flex cursor-pointer rounded-md bg-gray-800 px-3 py-2 text-white">
             Register
           </span>
         </SignUpButton>
