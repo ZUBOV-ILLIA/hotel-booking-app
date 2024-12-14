@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { ClerkLoaded, ClerkProvider } from "@clerk/nextjs";
-import { Inter } from "next/font/google";
+import { Inter, Lavishly_Yours } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
+const lavishly = Lavishly_Yours({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-lavishly",
+});
 
 export const metadata: Metadata = {
   title: "Here is Booking",
@@ -21,7 +26,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${inter.className} flex min-h-dvh flex-col bg-gray-600`}
+          className={`${inter.className} ${lavishly.variable} flex min-h-dvh flex-col bg-gray-600`}
         >
           <ClerkLoaded>
             <Header />

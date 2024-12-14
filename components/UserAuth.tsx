@@ -7,20 +7,17 @@ import {
 } from "@clerk/nextjs";
 import Link from "next/link";
 import React from "react";
+import { Button } from "@/components/ui/button";
 
 function UserAuth() {
   return (
     <div className="flex gap-4">
       <SignedOut>
         <SignInButton mode="modal">
-          <span className="flex cursor-pointer rounded-md bg-gray-800 px-3 py-2 text-white">
-            Sign In
-          </span>
+          <Button>Sign In</Button>
         </SignInButton>
         <SignUpButton mode="modal">
-          <span className="flex cursor-pointer rounded-md bg-gray-800 px-3 py-2 text-white">
-            Register
-          </span>
+          <Button>Register</Button>
         </SignUpButton>
       </SignedOut>
 

@@ -8,12 +8,9 @@ function Header() {
       <nav className="px-5">
         <ul className="flex justify-between">
           <li>
-            <Link
-              href="/"
-              className="font- flex items-center gap-4 text-yellow-400"
-            >
+            <Link href="/" className="flex items-center gap-4 text-yellow-400">
               <FaBed size={48} className="" />
-              Here is Booking
+              <span className="font-lavishly text-4xl">Here is Booking</span>
             </Link>
           </li>
           <li className="flex items-center">
