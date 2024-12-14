@@ -1,19 +1,20 @@
-import { FaBed } from "react-icons/fa";
 import Link from "next/link";
 import UserAuth from "@/components/UserAuth";
 
 function Header() {
   return (
-    <header className="container mx-auto border-b border-gray-400 py-2">
+    <header className="container mx-auto overflow-hidden border-b border-gray-400 py-1">
       <nav className="px-5">
         <ul className="flex justify-between">
-          <li>
-            <Link href="/" className="flex items-center gap-4 text-yellow-400">
-              <FaBed size={48} className="" />
-              <span className="font-lavishly text-4xl">Here is Booking</span>
+          <li className="animate-slideInFromLeft flex items-center">
+            <Link
+              href="/"
+              className="font-corinthia flex items-center text-2xl text-yellow-400 md:text-5xl"
+            >
+              Booking
             </Link>
           </li>
-          <li className="flex items-center">
+          <li className="animate-slideInFromRight flex items-center">
             <UserAuth />
           </li>
         </ul>

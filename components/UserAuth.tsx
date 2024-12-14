@@ -14,10 +14,10 @@ function UserAuth() {
     <div className="flex gap-4">
       <SignedOut>
         <SignInButton mode="modal">
-          <Button>Sign In</Button>
+          <Button size="sm">Sign In</Button>
         </SignInButton>
         <SignUpButton mode="modal">
-          <Button>Register</Button>
+          <Button size="sm">Register</Button>
         </SignUpButton>
       </SignedOut>
 
@@ -30,11 +30,14 @@ function UserAuth() {
           <UserButton
             appearance={{
               elements: {
-                userButtonAvatarBox: "h-8 w-8",
+                userButtonAvatarBox: "md:h-8 md:w-8 h-6 w-6",
               },
             }}
             userProfileUrl="/profile"
           />
+          <span className="font-corinthia ml-2 mt-1 self-center text-xl text-white md:text-4xl">
+            Profile
+          </span>
         </Link>
       </SignedIn>
     </div>

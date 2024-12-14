@@ -21,7 +21,31 @@ const config: Config = {
       },
       colors: {},
       fontFamily: {
-        lavishly: ["var(--font-lavishly)", ...["--font-lavishly"]],
+        corinthia: ["var(--font-corinthia)", ...["--font-corinthia"]],
+      },
+      keyframes: {
+        slideInFromTop: {
+          "0%": { transform: "translateY(-50%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        slideInFromBottom: {
+          "0%": { transform: "translateY(50%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        slideInFromLeft: {
+          "0%": { transform: "translateX(-50%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInFromRight: {
+          "0%": { transform: "translateX(50%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+      },
+      animation: {
+        slideInFromTop: "slideInFromTop 0.5s ease-out",
+        slideInFromBottom: "slideInFromBottom 0.5s ease-out",
+        slideInFromLeft: "slideInFromLeft 0.5s ease-out",
+        slideInFromRight: "slideInFromRight 0.5s ease-out",
       },
     },
   },
