@@ -9,7 +9,120 @@ const rooms = [
     description: `Gathering attention with its original designation, stone-dressings in the interior walls, and refreshing capaciousness, King Cave Room with jacuzzi Heated by a floor-heating system, King Cave Room’s size is 38 m2. The maximum number of guests available in the King Cave Room is 3 persons`,
     link: "king-cave-room-with-jacuzzi",
     img: "/king-cave-room-with-jacuzzi/1.webp",
+    features: [
+      "38 m2",
+      "Access point for Internet",
+      "Air Conditioning",
+      "Bathroom",
+      "Cable TV",
+      "Complimentary Water",
+      "Hairdryer",
+      "Internet",
+      "Jacuzzi",
+      "Kettle",
+      "Mini Bar",
+      "Shower",
+      "Sitting Area",
+      "Smoke Detectors",
+      "Tea-Coffee Facilities",
+      "Telephone",
+      "Toilet",
+      "Towels and Toiletries",
+      "TV",
+      "Underfloor Heating System",
+    ],
   },
+  {
+    name: "King Cave Room",
+    description: `With its genuine design, and it’s historical past as being used as a cellar in ancient times, our stone-carved room’s interior catches the attention by its arches and spaciousness; Heated by a floor-heating system, King Cave Room’s size is 40 m2. The maximum number of guests available in the King Cave Room is 4 persons.`,
+    link: "king-cave-room",
+    img: "/king-cave-room/1.webp",
+    features: [
+      "40 m2",
+      "Access point for Internet",
+      "Air Conditioning",
+      "Bathroom",
+      "Cable TV",
+      "Complimentary Water",
+      "Hairdryer",
+      "Internet",
+      "Kettle",
+      "Mini Bar",
+      "Shower",
+      "Sitting Area",
+      "Smoke Detectors",
+      "Tea-Coffee Facilities",
+      "Telephone",
+      "Toilet",
+      "Towels and Toiletries",
+      "TV",
+      "Underfloor Heating System",
+    ],
+  },
+  // {
+  //   name: "",
+  //   description: ``,
+  //   link: "king-cave-room-with-jacuzzi",
+  //   img: "/king-cave-room-with-jacuzzi/1.webp",
+  //   features: [
+  //   ],
+  // },
+  // {
+  //   name: "",
+  //   description: ``,
+  //   link: "king-cave-room-with-jacuzzi",
+  //   img: "/king-cave-room-with-jacuzzi/1.webp",
+  //   features: [
+  //   ],
+  // },
+  // {
+  //   name: "",
+  //   description: ``,
+  //   link: "king-cave-room-with-jacuzzi",
+  //   img: "/king-cave-room-with-jacuzzi/1.webp",
+  //   features: [
+  //   ],
+  // },
+  // {
+  //   name: "",
+  //   description: ``,
+  //   link: "king-cave-room-with-jacuzzi",
+  //   img: "/king-cave-room-with-jacuzzi/1.webp",
+  //   features: [
+  //   ],
+  // },
+  // {
+  //   name: "",
+  //   description: ``,
+  //   link: "king-cave-room-with-jacuzzi",
+  //   img: "/king-cave-room-with-jacuzzi/1.webp",
+  //   features: [
+  //   ],
+  // },
+  // {
+  //   name: "",
+  //   description: ``,
+  //   link: "king-cave-room-with-jacuzzi",
+  //   img: "/king-cave-room-with-jacuzzi/1.webp",
+  //   features: [
+  //   ],
+  // },
+  // {
+  //   name: "",
+  //   description: ``,
+  //   link: "king-cave-room-with-jacuzzi",
+  //   img: "/king-cave-room-with-jacuzzi/1.webp",
+  //   features: [
+  //   ],
+  // },
+  // {
+  //   name: "",
+  //   description: ``,
+  //   link: "king-cave-room-with-jacuzzi",
+  //   img: "/king-cave-room-with-jacuzzi/1.webp",
+  //   features: [
+  //   ],
+  // },
 ];
 
 export default function Rooms() {
@@ -21,13 +134,13 @@ export default function Rooms() {
         {rooms.length > 0 &&
           rooms.map((room) => (
             <div
-              className="flex flex-col rounded-lg border p-4 backdrop-blur-xl"
+              className="flex flex-col rounded-lg border bg-gray-600 bg-opacity-50 p-4 backdrop-blur-xl"
               key={room.link}
             >
               <Image
                 src={room.img}
                 alt="room iage"
-                className="mb-3 w-full rounded"
+                className="mb-3 h-52 w-full rounded object-cover md:h-80"
                 width="100"
                 height="100"
               />
