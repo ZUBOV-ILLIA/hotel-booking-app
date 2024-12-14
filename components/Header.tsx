@@ -3,18 +3,18 @@ import UserAuth from "@/components/UserAuth";
 
 function Header() {
   return (
-    <header className="container mx-auto overflow-hidden border-b border-gray-400 py-1">
+    <header className="container mx-auto overflow-hidden py-3">
       <nav className="px-5">
         <ul className="flex justify-between">
-          <li className="animate-slideInFromLeft flex items-center">
+          <li className="flex animate-slideInFromLeft items-center">
             <Link
               href="/"
-              className="font-corinthia flex items-center text-2xl text-yellow-400 md:text-5xl"
+              className="-mb-2 flex items-center font-corinthia text-4xl text-yellow-400 md:text-5xl"
             >
-              Booking
+              Cave Hotel
             </Link>
           </li>
-          <li className="animate-slideInFromRight flex items-center">
+          <li className="flex animate-slideInFromRight items-center">
             <UserAuth />
           </li>
         </ul>

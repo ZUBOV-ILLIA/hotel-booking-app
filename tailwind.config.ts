@@ -21,7 +21,7 @@ const config: Config = {
       },
       colors: {},
       fontFamily: {
-        corinthia: ["var(--font-corinthia)", ...["--font-corinthia"]],
+        corinthia: ["var(--font-corinthia)"],
       },
       keyframes: {
         slideInFromTop: {

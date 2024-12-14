@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import { ClerkLoaded, ClerkProvider } from "@clerk/nextjs";
 import { Inter, Corinthia } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import bgWaveImg1 from "@/images/bg-wave-1.svg";
-import bgWaveImg2 from "@/images/bg-wave-2.svg";
-import bgWaveImg3 from "@/images/bg-wave-3.svg";
-import bgWaveImg4 from "@/images/bg-wave-4.svg";
-import bgWaveImg5 from "@/images/bg-wave-5.svg";
-import Image from "next/image";
+import mainBg from "@/public/main-bg.webp";
+import bgWaveImg2 from "@/public/bg-wave-2.svg";
+import bgWaveImg3 from "@/public/bg-wave-3.svg";
+import bgWaveImg4 from "@/public/bg-wave-4.svg";
+import bgWaveImg5 from "@/public/bg-wave-5.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 const corinthia = Corinthia({
@@ -36,19 +36,20 @@ export default function RootLayout({
           className={`${inter.className} ${corinthia.variable} flex min-h-dvh flex-col bg-gray-600`}
         >
           <Image
-            src={bgWaveImg1}
-            alt="background img"
-            className="absolute left-0 top-0 -z-10 w-full opacity-30"
-          />
-          <Image
             src={bgWaveImg3}
             alt="background img"
-            className="absolute left-0 top-0 -z-10 w-full opacity-30"
+            className="fixed left-0 top-0 -z-10 w-full opacity-40"
           />
           <Image
             src={bgWaveImg5}
             alt="background img"
-            className="absolute left-0 top-0 -z-10 w-full rotate-180 opacity-30"
+            className="fixed left-0 top-0 -z-10 w-full rotate-180 opacity-50"
+          />
+          <Image
+            src={mainBg}
+            alt="main image"
+            className="fixed -z-20 h-full w-full object-cover brightness-50"
+            placeholder="blur"
           />
 
           <ClerkLoaded>
@@ -64,17 +65,17 @@ export default function RootLayout({
           <Image
             src={bgWaveImg2}
             alt="background img"
-            className="absolute bottom-0 left-0 -z-10 w-full opacity-30"
+            className="fixed bottom-0 left-0 -z-10 w-full opacity-60"
           />
           <Image
             src={bgWaveImg4}
             alt="background img"
-            className="absolute bottom-0 left-0 -z-10 w-full opacity-30"
+            className="fixed bottom-0 left-0 -z-10 w-full opacity-40"
           />
           <Image
             src={bgWaveImg5}
             alt="background img"
-            className="absolute bottom-0 left-0 -z-10 w-full opacity-30"
+            className="fixed bottom-0 left-0 -z-10 w-full opacity-70"
           />
         </body>
       </html>

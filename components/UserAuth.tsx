@@ -35,7 +35,7 @@ function UserAuth() {
             }}
             userProfileUrl="/profile"
           />
-          <span className="font-corinthia ml-2 mt-1 self-center text-xl text-white md:text-4xl">
+          <span className="ml-2 mt-1 self-center text-xl font-thin text-white md:text-3xl">
             Profile
           </span>
         </Link>
