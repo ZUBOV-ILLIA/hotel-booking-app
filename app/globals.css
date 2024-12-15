@@ -11,3 +11,28 @@
     --radius: 0.5rem;
   }
 }
+
+.t-shadow {
+  text-shadow: 2px 2px 4px #facc15;
+}
+
+@keyframes fly {
+  0% { left: -30vw; top: 5%; }
+  20% { left: 15vw; top: 10%; }
+  40% { left: 30vw; top: 8%; }
+  60% { left: 50vw; top: 18%; }
+  80% { left: 60vw; top: 25%; }
+  100% { left: 65vw; top: 28%; }
+}
+
+.balloon {
+  position: fixed;
+  transform: rotateY(180deg);
+  animation: fly 12s linear forwards;
+}
+
+@media (min-width: 769px) {
+  .balloon {
+    animation-duration: 25s;
+  }
+}
