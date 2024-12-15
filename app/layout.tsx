@@ -33,7 +33,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${inter.className} ${corinthia.variable} flex min-h-dvh flex-col bg-gray-600`}
+          className={`${inter.className} ${corinthia.variable} flex min-h-svh flex-col bg-gray-600`}
         >
           <Image
             src={bgWaveImg3}
