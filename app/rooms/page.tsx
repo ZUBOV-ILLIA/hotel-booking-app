@@ -364,9 +364,7 @@ export default function Rooms() {
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {rooms.length > 0 &&
-          rooms.map((room) => (
-            <RoomCard key={room.link} room={room} />
-          ))}
+          rooms.map((room) => <RoomCard key={room.link} room={room} />)}
       </div>
     </div>
   );
