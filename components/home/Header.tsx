@@ -3,7 +3,7 @@ import UserAuth from "@/components/UserAuth";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 overflow-hidden bg-opacity-60 bg-gradient-to-b from-gray-600 to-transparent py-3 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 overflow-hidden bg-opacity-60 bg-gradient-to-b from-gray-600 via-gray-600 to-transparent py-3">
       <nav className="container mx-auto px-5">
         <ul className="flex justify-between">
           <li className="flex animate-slideInFromLeft items-center">

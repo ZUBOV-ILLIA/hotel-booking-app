@@ -12,7 +12,7 @@ export default function Profile() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <SignedIn>
-          <div className="acc-settings-btn my-4 flex animate-slideInFromRight items-center backdrop-blur md:self-end">
+          <div className="acc-settings-btn my-4 flex animate-slideInFromRight items-center rounded bg-gray-600 bg-opacity-90 hover:bg-gray-500 md:self-end">
             <UserButton />
             <span className="pr-4">Account Settings</span>
           </div>

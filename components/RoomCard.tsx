@@ -5,7 +5,7 @@ import React from "react";
 export default function RoomCard({ room }: { room: Room }) {
   return (
     <div
-      className="flex flex-col rounded-lg border bg-gray-600 bg-opacity-50 p-4 backdrop-blur-xl"
+      className="flex flex-col rounded-lg border bg-gray-600 p-4"
       key={room.link}
     >
       <Image
@@ -17,10 +17,10 @@ export default function RoomCard({ room }: { room: Room }) {
       />
 
       <h3 className="mb-1 text-xl font-semibold">{room.name}</h3>
-      <p className="mb-2 text-gray-300">{room.description}</p>
+      <p className="mb-3 text-gray-300">{room.description}</p>
       <Link
         href={`/rooms/${room.link}`}
-        className="mt-auto inline-block self-end rounded bg-gray-600 px-4 py-2 text-white hover:bg-gray-500"
+        className="mt-auto inline-block self-end rounded border px-4 py-2 text-white hover:bg-gray-500"
       >
         View Room
       </Link>
