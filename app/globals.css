@@ -16,6 +16,10 @@
   text-shadow: 2px 2px 4px #facc15;
 }
 
+.t-shadow-b {
+  text-shadow: 2px 2px 4px #000;
+}
+
 @keyframes fly {
   0% { left: -30vw; top: 5%; }
   20% { left: 15vw; top: 10%; }
