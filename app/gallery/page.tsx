@@ -1,53 +1,51 @@
 "use client";
 
-import React, { useState } from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Image from "next/image";
+import { FaTimesCircle } from "react-icons/fa";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
 const images = Array.from(Array(29).keys());
 
 export default function Gallery() {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [api, setApi] = useState<CarouselApi>()
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    setCurrent(api.selectedScrollSnap() + 1)
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [api])
 
   const openModal = (index: number): void => {
-    setCurrentIndex(index);
     setIsModalOpen(true);
     document.body.style.overflow = "hidden";
-  };
 
+    setTimeout(() => {
+      api?.scrollTo(index, true);
+    })
+  };
   const closeModal = (): void => {
     setIsModalOpen(false);
-    setCurrentIndex(null);
     document.body.style.overflow = "auto";
   };
-
-  const showPreviousImage = (): void => {
-    if (currentIndex !== null && currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    } else {
-      setCurrentIndex(images.length - 1);
-    }
-  };
-
-  const showNextImage = (): void => {
-    if (currentIndex !== null && currentIndex < images.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    } else {
-      setCurrentIndex(0);
-    }
-  };
-
   const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>): void => {
     if (e.key === "Escape") {
       closeModal();
-    } else if (e.key === "ArrowLeft" || e.key === "ArrowUp" || e.key === "a") {
-      showPreviousImage();
-    } else if (
-      e.key === "ArrowRight" ||
-      e.key === "ArrowDown" ||
-      e.key === "d"
-    ) {
-      showNextImage();
     }
   };
 
@@ -68,59 +66,50 @@ export default function Gallery() {
             src={`/gallery/${i}.webp`}
             className="h-auto w-full rounded object-contain"
             alt="image"
-            width={450}
-            height={280}
+            width={270}
+            height={180}
             onClick={() => openModal(i)}
           />
         ))}
       </div>
 
-      {/*{isModalOpen && currentIndex !== null && (*/}
       <div
         className={`fixed inset-0 z-50 items-center justify-center bg-black text-white ${isModalOpen ? "flex" : "hidden"}`}
         aria-labelledby="modal-title"
         role="dialog"
         aria-modal="true"
       >
-        <span className="t-shadow-b absolute left-8 top-10 z-50 font-corinthia text-4xl underline-offset-4">
-          <span className="mr-2">Photo</span> {Number(currentIndex) + 1}
+        <span className="t-shadow-b absolute left-4 top-4 z-50 font-corinthia text-4xl underline-offset-4">
+          <span className="mr-3">Slide </span>{current} | {images.length}
         </span>
 
         <button
           onClick={closeModal}
-          className="t-shadow-b absolute right-4 top-4 z-50 p-4 text-2xl"
+          className="t-shadow-b absolute right-0 top-0 z-50 p-4 text-2xl"
           aria-label="Close modal"
         >
-          ✖
+          <FaTimesCircle size={30} className="border border-black bg-black rounded-full" />
         </button>
 
-        <div className="relative">
-          <Image
-            src={`/gallery/${currentIndex}.webp`}
-            className="rounded object-contain"
-            alt={`Zoomed image ${currentIndex}`}
-            width={1200}
-            height={800}
-          />
-
-          <button
-            onClick={showPreviousImage}
-            className="absolute left-0 top-1/2 z-50 flex h-full w-1/2 -translate-y-1/2 transform items-center p-3 text-2xl outline-none"
-            aria-label="Previous image"
-          >
-            ◀
-          </button>
-
-          <button
-            onClick={showNextImage}
-            className="absolute right-0 top-1/2 z-50 flex h-full w-1/2 -translate-y-1/2 transform flex-row-reverse items-center p-3 text-2xl outline-none"
-            aria-label="Next image"
-          >
-            ▶
-          </button>
-        </div>
+        <Carousel className="w-full" setApi={setApi}>
+          <CarouselContent >
+            {images.map((_, i) => (
+                <CarouselItem key={i} >
+                  <Image
+                      key={i}
+                      src={`/gallery/${i}.webp`}
+                      className="max-h-full w-full rounded object-contain"
+                      alt="image"
+                      width={450}
+                      height={280}
+                  />
+                </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="fixed left-0 top-1/2 z-30 h-full w-1/2 rounded-none flex items-center justify-start p-4 bg-transparent border-none hover:bg-transparent shadow-none outline-none focus-visible:ring-opacity-0" />
+          <CarouselNext className="fixed right-0 top-1/2 z-30 h-full  w-1/2 rounded-none flex items-center justify-end p-4 bg-transparent border-none hover:bg-transparent shadow-none outline-none focus-visible:ring-opacity-0" />
+        </Carousel>
       </div>
-      {/*)}*/}
     </div>
   );
 }
