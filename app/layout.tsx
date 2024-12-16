@@ -18,9 +18,9 @@ const corinthia = Corinthia({
 });
 
 export const metadata: Metadata = {
-  title: "Here is Booking",
+  title: "Sky Haven Hotel",
   description:
-    "Here is Booking is a website where you can book rooms in the our hotel.",
+    "Sky Haven Hotel - official website",
 };
 
 const pages = [
