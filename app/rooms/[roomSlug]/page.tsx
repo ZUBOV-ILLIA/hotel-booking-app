@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import RoomInner from "@/components/room/RoomInner";
+import RoomInner from "@/app/rooms/[roomSlug]/(inner)/RoomInner";
 
 const PUBLIC_DIR = path.join(process.cwd(), "public");
 
