@@ -6,8 +6,8 @@ import foodImg from "@/public/gallery/8.webp";
 
 export default function About() {
   return (
-    <div className="container mx-auto flex flex-col overflow-hidden rounded-xl border bg-gray-600 bg-opacity-95 py-8">
-      <h2 className="my-6 animate-slideInFromTop text-center text-4xl font-thin">
+    <div className="container mx-auto mt-4 flex flex-col overflow-hidden rounded-xl border bg-gray-600 bg-opacity-95 py-8">
+      <h2 className="mb-5 animate-slideInFromTop text-center text-4xl font-thin">
         About Sky Haven Cave Hotel
       </h2>
 

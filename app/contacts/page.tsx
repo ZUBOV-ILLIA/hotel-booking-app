@@ -1,8 +1,8 @@
-export default function Activities() {
+export default function Contacts() {
   return (
     <div className="container mx-auto flex flex-col overflow-hidden px-5">
       <h2 className="slideInFromTop mb-6 animate-slideInFromTop text-4xl font-thin">
-        Activities
+        Contacts
       </h2>
     </div>
   );
