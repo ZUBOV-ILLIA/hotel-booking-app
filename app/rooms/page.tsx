@@ -268,9 +268,8 @@ const rooms = [
   {
     name: "Twin Stone Room",
     description:
-      "Getting attention by its built of unique stones of the Cappadocia Region and interior room niches.",
-    description2:
-      "Heated by a floor-heating system, Superior Stone Room’s size is 20 m2. The maximum number of guests available in the Twin Bed Stone Room are 2 persons.",
+      "Getting attention by its built of unique stones of the Cappadocia Region and interior room niches. Heated by a floor-heating system, Superior Stone Room’s size is 20 m2. The maximum number of guests available in the Twin Bed Stone Room are 2 persons.",
+    description2: "",
     link: "twin-stone-room",
     img: "/twin-stone-room/1.webp",
     features: [
