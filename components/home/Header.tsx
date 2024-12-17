@@ -1,5 +1,5 @@
 import Link from "next/link";
-import UserAuth from "@/components/UserAuth";
+// import UserAuth from "@/components/UserAuth";
 
 export default function Header() {
   return (
@@ -17,8 +17,14 @@ export default function Header() {
               Sky Haven
             </Link>
           </li>
-          <li className="flex animate-slideInFromRight items-center">
-            <UserAuth />
+          <li className="animate-slideInFromRight">
+            <Link
+              href="/profile"
+              className="text-md t-shadow flex h-full items-center px-2 font-thin text-white transition-colors hover:text-yellow-400 md:text-xl"
+            >
+              My Bookings
+            </Link>
+            {/* <UserAuth /> */}
           </li>
         </ul>
       </nav>

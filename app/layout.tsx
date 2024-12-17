@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ClerkLoaded, ClerkProvider } from "@clerk/nextjs";
+// import { ClerkLoaded, ClerkProvider } from "@clerk/nextjs";
 import { Inter, Corinthia } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
@@ -19,8 +19,7 @@ const corinthia = Corinthia({
 
 export const metadata: Metadata = {
   title: "Sky Haven Hotel",
-  description:
-    "Sky Haven Hotel - official website",
+  description: "Sky Haven Hotel - official website",
 };
 
 const pages = [
@@ -52,36 +51,40 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body
-          className={`${inter.className} ${corinthia.variable} flex min-h-svh flex-col bg-gray-600`}
-        >
-          <HomeUpImages />
-          <ClerkLoaded>
-            <Header />
-            <main className="flex grow flex-col py-6 text-white">
-              <Image
-                src={balloonImg}
-                className="balloon -z-20 h-1/6 w-auto brightness-75"
-                alt="img of balloon"
-              />
-              <div className="t-shadow container mx-auto mb-2 flex flex-wrap justify-center gap-x-8 gap-y-3 font-corinthia text-4xl text-white">
-                {pages.map((page) => (
-                  <Link key={page.link} href={page.link}>
-                    {page.name}
-                  </Link>
-                ))}
-              </div>
+    // <ClerkProvider>
+    <html lang="en">
+      <body
+        className={`${inter.className} ${corinthia.variable} flex min-h-svh flex-col bg-gray-600`}
+      >
+        <HomeUpImages />
+        {/* <ClerkLoaded> */}
+        <Header />
+        <main className="flex grow flex-col py-6 text-white">
+          <Image
+            src={balloonImg}
+            className="balloon -z-20 h-1/6 w-auto brightness-75"
+            alt="img of balloon"
+          />
+          <div className="t-shadow container mx-auto mb-2 flex flex-wrap justify-center gap-x-8 gap-y-3 font-corinthia text-4xl text-white">
+            {pages.map((page) => (
+              <Link
+                key={page.link}
+                href={page.link}
+                className="transition-colors hover:text-yellow-400"
+              >
+                {page.name}
+              </Link>
+            ))}
+          </div>
 
-              {children}
-            </main>
+          {children}
+        </main>
 
-            <Footer />
-          </ClerkLoaded>
-          <HomeBottomImages />
-        </body>
-      </html>
-    </ClerkProvider>
+        <Footer />
+        {/* </ClerkLoaded> */}
+        <HomeBottomImages />
+      </body>
+    </html>
+    // </ClerkProvider>
   );
 }
