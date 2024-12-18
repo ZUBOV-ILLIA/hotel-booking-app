@@ -5,7 +5,7 @@ import UserInfo from "@/components/profile/UserInfo";
 
 export default function Profile() {
   return (
-    <div className="container mx-auto flex flex-col overflow-hidden px-5">
+    <div className="container mx-auto flex flex-col overflow-hidden px-2">
       <h2 className="mb-4 animate-slideInFromTop text-4xl font-thin">
         Profile
       </h2>

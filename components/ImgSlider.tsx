@@ -40,7 +40,7 @@ export default function ImgSlider({
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
-  }, [api]);
+  }, [api, setCurrent]);
 
   const closeModal = (): void => {
     setIsModalOpen(false);

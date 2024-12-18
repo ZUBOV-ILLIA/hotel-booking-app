@@ -25,7 +25,7 @@ const pages = [
 
 export default function MainLinks() {
   return (
-    <div className="t-shadow container mx-auto mb-2 flex flex-wrap justify-center gap-x-8 gap-y-3 font-corinthia text-4xl text-white">
+    <div className="t-shadow container mx-auto mb-2 flex flex-wrap justify-center gap-x-8 gap-y-3 px-2 font-corinthia text-4xl text-white">
       {pages.map((page) => (
         <Link
           key={page.link}

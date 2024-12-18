@@ -32,7 +32,7 @@ export default function SimpleImgSlider({
   return (
     <>
       <div
-        className={`relative w-full overflow-hidden rounded-md border ${className}`}
+        className={`relative w-full overflow-hidden rounded-xl border ${className}`}
       >
         <div
           className="flex transition-transform duration-500"
@@ -66,7 +66,7 @@ export default function SimpleImgSlider({
         </button>
       </div>
       {navDots && (
-        <div className="absolute -bottom-5 left-0 right-0 flex items-center justify-center space-x-2">
+        <div className="absolute -bottom-12 left-0 right-0 flex items-center justify-center space-x-2 rounded-xl border bg-gray-600 bg-opacity-95 py-3">
           {images.map((_, index) => (
             <button
               key={index}

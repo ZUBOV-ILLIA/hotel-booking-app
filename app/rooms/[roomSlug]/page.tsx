@@ -1,12 +1,12 @@
 import fs from "fs";
 import path from "path";
 import RoomInner from "@/app/rooms/[roomSlug]/(inner)/RoomInner";
+import rooms from "@/public/rooms.json";
 
 const PUBLIC_DIR = path.join(process.cwd(), "public");
 
 export async function generateStaticParams() {
   const items = fs.readdirSync(PUBLIC_DIR);
-
   const folders = items.filter((item) => {
     const itemPath = path.join(PUBLIC_DIR, item);
     return fs.statSync(itemPath).isDirectory() && item !== "gallery";
@@ -37,5 +37,11 @@ export default async function Room({
     }
   }
 
-  return <RoomInner images={images} />;
+  const room = (await rooms.find((room) => room.link === roomSlug)) as Room;
+
+  if (!room) {
+    return <div>Room not found</div>;
+  }
+
+  return <RoomInner images={images} room={room} />;
 }
