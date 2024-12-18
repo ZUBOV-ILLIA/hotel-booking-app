@@ -1,16 +1,18 @@
 "use client";
 
 import React, { useState } from "react";
+import { MdFullscreen } from "react-icons/md";
 import { type CarouselApi } from "@/components/ui/carousel";
 import ImgSlider from "@/components/ImgSlider";
 import overflowHiddenBody from "@/utility/helpers";
+import SimpleImgSlider from "@/components/SimpleImgSlider";
 
 export default function RoomInner({ images }: { images: string[] }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
-  const openModal = (index: number): void => {
+  const openModal = (index: number = 0): void => {
     setIsModalOpen(true);
     overflowHiddenBody(true);
 
@@ -20,8 +22,22 @@ export default function RoomInner({ images }: { images: string[] }) {
   };
 
   return (
-    <div>
-      <button onClick={() => openModal(2)}>open</button>
+    <div className="container mx-auto overflow-x-hidden px-5">
+      <h2 className="mb-6 animate-slideInFromTop text-4xl font-thin">Rooms</h2>
+
+      <div className="grid grid-cols-1 pb-6 md:grid-cols-3">
+        <div className="relative col-span-2">
+          <SimpleImgSlider images={images} />
+
+          <button
+            className="absolute bottom-1 right-1 rounded-full p-3 active:bg-white active:bg-opacity-10"
+            onClick={() => openModal()}
+          >
+            <MdFullscreen size={30} />
+          </button>
+        </div>
+        <div></div>
+      </div>
 
       <ImgSlider
         setIsModalOpen={setIsModalOpen}

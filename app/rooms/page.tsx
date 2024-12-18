@@ -64,13 +64,13 @@ const rooms = [
     ],
   },
   {
-    name: "Stone Room with Balcony – 210",
+    name: "Stone Room with Balcony - 210",
     description:
       "Gathering the attention by the composition of special stones of the region, interior niches, colorful ceramics, and a big balcony; Heated by a floor-heating system, Stone Room With Balcony’s size is 22 m2.",
     description2:
       "The maximum number of guests available in the Stone Room with Balcony is 3 persons.",
-    link: "stone-room-with-balcony–210",
-    img: "/stone-room-with-balcony–210/1.webp",
+    link: "stone-room-with-balcony-too",
+    img: "/stone-room-with-balcony-too/1.webp",
     features: [
       "22 m2",
       "Access point for Internet",
@@ -100,8 +100,8 @@ const rooms = [
       "You can enjoy the wonderful view in our stone jacuzzi room, which attracts attention with its fairy chimneys and view.",
     description2:
       "Our room is heated with underfloor heating system. Our room size is 22 m2. The maximum person capacity is 2 people.",
-    link: "superior-stone-room-with-jacuzzi-view-304",
-    img: "/superior-stone-room-with-jacuzzi-view-304/1.webp",
+    link: "superior-stone-room-with-jacuzzi-view-tof",
+    img: "/superior-stone-room-with-jacuzzi-view-tof/1.webp",
     features: [
       "22 m2",
       "Air Conditioning",
@@ -206,13 +206,13 @@ const rooms = [
     ],
   },
   {
-    name: "Fairy Chimney Room – 102",
+    name: "Fairy Chimney Room - 102",
     description:
       "One of the epically famous Fairy Chimney happens to be in our hotel. The Fairy Chimney Room is heated by a floor-heating system, Fairy Chimney Room’s size is 22 m2.",
     description2:
       "The maximum number of guests available in the Fairy Chimney Room is 3 persons.",
-    link: "fairy-chimney-room–102",
-    img: "/fairy-chimney-room–102/1.webp",
+    link: "fairy-chimney-room-oot",
+    img: "/fairy-chimney-room-oot/1.webp",
     features: [
       "22 m2",
       "Access point for Internet",
@@ -295,13 +295,13 @@ const rooms = [
     ],
   },
   {
-    name: "Superior Cave Room – 203",
+    name: "Superior Cave Room - 203",
     description:
       "Walls that are designated by different regional stones, our stone-carved room where you can experience the reflection of light on the rock.",
     description2:
       "Heated by a floor-heating system, Superior Cave Room’s size is 27 m2. The maximum number of guests available in the Superior Cave Room is 3 persons.",
-    link: "superior-cave-room-203",
-    img: "/superior-cave-room-203/1.webp",
+    link: "superior-cave-room-tot",
+    img: "/superior-cave-room-tot/1.webp",
     features: [
       "27 m2",
       "Access point for Internet",
@@ -325,13 +325,13 @@ const rooms = [
     ],
   },
   {
-    name: "Superior Cave Room – 101",
+    name: "Superior Cave Room - 101",
     description:
       "Stone-carved cave room, with its unique design. Heated by a floor-heating system, Superior Cave Room’s size is 30 m2.",
     description2:
       "Heated by a floor-heating system, Superior Cave Room’s size is 30 m2. The maximum number of guests available in the Superior Cave Room is 3 persons.",
-    link: "superior-cave-room–101",
-    img: "/superior-cave-room–101/1.webp",
+    link: "superior-cave-room-ooo",
+    img: "/superior-cave-room-ooo/1.webp",
     features: [
       "30 m2",
       "Access point for Internet",
