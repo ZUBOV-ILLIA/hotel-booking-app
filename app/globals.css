@@ -19,14 +19,43 @@
 .t-shadow-b {
   text-shadow: 2px 2px 4px #000;
 }
+.custom-accordion {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.custom-accordion > svg {
+  /* margin-right: 12px; */
+  height: 32px;
+  width: 32px;
+  stroke: white;
+}
 
 @keyframes fly {
-  0% { left: -30vw; top: 5%; }
-  20% { left: 15vw; top: 10%; }
-  40% { left: 30vw; top: 8%; }
-  60% { left: 50vw; top: 18%; }
-  80% { left: 60vw; top: 25%; }
-  100% { left: 65vw; top: 28%; }
+  0% {
+    left: -30vw;
+    top: 5%;
+  }
+  20% {
+    left: 15vw;
+    top: 10%;
+  }
+  40% {
+    left: 30vw;
+    top: 8%;
+  }
+  60% {
+    left: 50vw;
+    top: 18%;
+  }
+  80% {
+    left: 60vw;
+    top: 25%;
+  }
+  100% {
+    left: 65vw;
+    top: 28%;
+  }
 }
 
 .balloon {

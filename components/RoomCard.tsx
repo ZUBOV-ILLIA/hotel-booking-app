@@ -11,7 +11,7 @@ export default function RoomCard({ room }: { room: Room }) {
       <Image
         className="mb-3 h-52 w-full rounded object-cover md:h-80"
         src={room.img}
-        alt="room iage"
+        alt="room image"
         width={450}
         height={320}
       />

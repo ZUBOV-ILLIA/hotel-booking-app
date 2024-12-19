@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Corinthia } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import Header from "@/components/home/Header";
 import Footer from "@/components/home/Footer";
 import HomeImages from "@/components/home/HomeImages";
-import Image from "next/image";
 import MainLinks from "@/components/home/MainLinks";
 
 const inter = Inter({ subsets: ["latin"] });

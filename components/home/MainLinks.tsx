@@ -13,8 +13,8 @@ const pages = [
     link: "/gallery",
   },
   {
-    name: "About Us",
-    link: "/about",
+    name: "Reservation",
+    link: "/reservation",
   },
   {
     name: "Activities",
@@ -24,13 +24,17 @@ const pages = [
     name: "Contact Us",
     link: "/contacts",
   },
+  {
+    name: "About Us",
+    link: "/about",
+  },
 ];
 
 export default function MainLinks() {
   const pathname = usePathname();
 
   return (
-    <div className="t-shadow container mx-auto mb-2 flex flex-wrap justify-center gap-x-8 gap-y-3 px-2 font-corinthia text-4xl text-white">
+    <div className="t-shadow container mx-auto mb-2 flex flex-wrap justify-around gap-x-4 gap-y-3 px-2 font-corinthia text-4xl text-white">
       {pages.map((page) => (
         <Link
           key={page.link}
