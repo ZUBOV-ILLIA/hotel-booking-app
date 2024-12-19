@@ -31,7 +31,7 @@ export default function RootLayout({
         <HomeImages />
         <Header />
 
-        <main className="flex grow flex-col py-6 text-white">
+        <main className="flex grow flex-col py-4 text-white">
           <MainLinks />
           {children}
         </main>

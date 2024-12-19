@@ -24,10 +24,6 @@ export default function Gallery() {
 
   return (
     <div className="container mx-auto overflow-x-hidden px-2 outline-none">
-      <h2 className="slideInFromTop mb-6 animate-slideInFromTop text-4xl font-thin">
-        Gallery
-      </h2>
-
       <div className="grid grid-cols-2 gap-2 rounded-xl border bg-gray-600 bg-opacity-95 p-3 md:grid-cols-3 xl:grid-cols-4">
         {images.map((el, i) => (
           <Image
