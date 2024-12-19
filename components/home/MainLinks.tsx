@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const pages = [
   {
@@ -24,13 +27,15 @@ const pages = [
 ];
 
 export default function MainLinks() {
+  const pathname = usePathname();
+
   return (
     <div className="t-shadow container mx-auto mb-2 flex flex-wrap justify-center gap-x-8 gap-y-3 px-2 font-corinthia text-4xl text-white">
       {pages.map((page) => (
         <Link
           key={page.link}
           href={page.link}
-          className="transition-colors hover:text-yellow-400"
+          className={`transition-colors ${pathname === page.link ? "text-yellow-400" : "hover:text-yellow-400"}`}
         >
           {page.name}
         </Link>

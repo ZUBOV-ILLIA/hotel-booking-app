@@ -54,10 +54,10 @@ export default function Activities() {
         Activities
       </h2>
 
-      <div className="mt-4 flex flex-col overflow-hidden rounded-xl border bg-gray-600 bg-opacity-95 p-4">
+      <div className="flex flex-col overflow-hidden rounded-xl border bg-gray-600 bg-opacity-95 p-4">
         {activities.map((el) => (
           <Fragment key={el.name}>
-            <h4 className="my-2 pb-2 text-center text-2xl font-thin text-yellow-400">
+            <h4 className="my-2 animate-slideInFromLeft pb-2 text-center text-2xl font-thin text-yellow-400">
               {el.name}
             </h4>
             <div>
