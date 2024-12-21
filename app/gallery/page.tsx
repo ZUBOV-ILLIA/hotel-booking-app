@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { type CarouselApi } from "@/components/ui/carousel";
 import ImgSlider from "@/components/ImgSlider";
-import overflowHiddenBody from "@/utility/helpers";
+import { overflowHiddenBody } from "@/utility/helpers";
 
 const images = Array.from({ length: 29 }, (_, i) => `/gallery/${i}.webp`);
 

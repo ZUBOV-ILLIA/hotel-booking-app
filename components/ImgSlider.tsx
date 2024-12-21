@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { FaTimesCircle } from "react-icons/fa";
 import Image from "next/image";
-import overflowHiddenBody from "@/utility/helpers";
+import { overflowHiddenBody } from "@/utility/helpers";
 import { useEffect } from "react";
 
 export default function ImgSlider({

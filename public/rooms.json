@@ -1,10 +1,12 @@
 [
   {
+    "id": 1,
     "name": "King Cave Room with Jacuzzi",
     "description": "Gathering attention with its original designation, stone-dressings in the interior walls, and refreshing capaciousness, King Cave Room with jacuzzi Heated by a floor-heating system, King Cave Room’s size is 38 m2.",
     "description2": "The maximum number of guests available in the King Cave Room is 3 persons",
     "link": "king-cave-room-with-jacuzzi",
     "img": "/king-cave-room-with-jacuzzi/1.webp",
+    "price": "180",
     "features": [
       "38 m2",
       "Access point for Internet",
@@ -29,11 +31,13 @@
     ]
   },
   {
+    "id": 2,
     "name": "King Cave Room",
     "description": "With its genuine design, and it’s historical past as being used as a cellar in ancient times, our stone-carved room’s interior catches the attention by its arches and spaciousness.",
     "description2": "Heated by a floor-heating system, King Cave Room’s size is 40 m2. The maximum number of guests available in the King Cave Room is 4 persons.",
     "link": "king-cave-room",
     "img": "/king-cave-room/1.webp",
+    "price": "150",
     "features": [
       "40 m2",
       "Access point for Internet",
@@ -57,11 +61,13 @@
     ]
   },
   {
+    "id": 3,
     "name": "Stone Room with Balcony - 210",
     "description": "Gathering the attention by the composition of special stones of the region, interior niches, colorful ceramics, and a big balcony; Heated by a floor-heating system, Stone Room With Balcony’s size is 22 m2.",
     "description2": "The maximum number of guests available in the Stone Room with Balcony is 3 persons.",
     "link": "stone-room-with-balcony-too",
     "img": "/stone-room-with-balcony-too/1.webp",
+    "price": "170",
     "features": [
       "22 m2",
       "Access point for Internet",
@@ -86,11 +92,13 @@
     ]
   },
   {
+    "id": 4,
     "name": "Superior Stone Room with Jacuzzi (View) - 304",
     "description": "You can enjoy the wonderful view in our stone jacuzzi room, which attracts attention with its fairy chimneys and view.",
     "description2": "Our room is heated with underfloor heating system. Our room size is 22 m2. The maximum person capacity is 2 people.",
     "link": "superior-stone-room-with-jacuzzi-view-tof",
     "img": "/superior-stone-room-with-jacuzzi-view-tof/1.webp",
+    "price": "200",
     "features": [
       "22 m2",
       "Air Conditioning",
@@ -104,11 +112,13 @@
     ]
   },
   {
+    "id": 5,
     "name": "Superior Stone Room with Jacuzzi (View)",
     "description": "Located at the terrace floor with the view and catching the eye by its structure made of indigenous stones, unique design with jacuzzi, and ceramics that are placed in the room.",
     "description2": "Heated by a floor-heating system, Superior Stone Room’s size is 25 m2. The maximum number of guests available in the Superior Stone Room is 2 persons.",
     "link": "superior-stone-room-view",
     "img": "/superior-stone-room-view/1.webp",
+    "price": "250",
     "features": [
       "25 m2",
       "Access point for Internet",
@@ -133,11 +143,13 @@
     ]
   },
   {
+    "id": 6,
     "name": "Superior Stone Room",
     "description": "Located at the terrace floor and catching the eye by its structure made of indigenous stones, unique design, and ceramics that are placed in the room.",
     "description2": "Heated by a floor-heating system, Superior Stone Room’s size is 28 m2. The maximum number of guests available in the Superior Stone Room is 4 persons.",
     "link": "superior-stone-room",
     "img": "/superior-stone-room/1.webp",
+    "price": "250",
     "features": [
       "28 m2",
       "Access point for Internet",
@@ -161,11 +173,13 @@
     ]
   },
   {
+    "id": 7,
     "name": "King Stone Room",
     "description": "In this room, which is made of stones peculiar to the region, attracts attention with its unique design and width and overlooks our inner courtyard.",
     "description2": "Our room is heated by underfloor heating system. Our room size is 32 m2. Maximum occupancy capacity is 4 people.",
     "link": "king-stone-room",
     "img": "/king-stone-room/1.webp",
+    "price": "220",
     "features": [
       "32 m2",
       "Access point for Internet",
@@ -189,11 +203,13 @@
     ]
   },
   {
+    "id": 8,
     "name": "Fairy Chimney Room - 102",
     "description": "One of the epically famous Fairy Chimney happens to be in our hotel. The Fairy Chimney Room is heated by a floor-heating system, Fairy Chimney Room’s size is 22 m2.",
     "description2": "The maximum number of guests available in the Fairy Chimney Room is 3 persons.",
     "link": "fairy-chimney-room-oot",
     "img": "/fairy-chimney-room-oot/1.webp",
+    "price": "150",
     "features": [
       "22 m2",
       "Access point for Internet",
@@ -217,11 +233,13 @@
     ]
   },
   {
+    "id": 9,
     "name": "Superior Cave Room",
     "description": "Designated by the neat work of craftmanship, interior walls built of different kinds of regional stones and stonework that is meticulously-made, Superior Cave Room catches the attention by its decoration made out of pigeon lofts inside the room, interior traditional ceramics emplacements, and the Ottoman-style wooden ceiling.",
     "description2": "Heated by a floor-heating system, Superior Cave Room’s size is 25 m2. The maximum number of guests available in the Superior Cave Room is 3 persons.",
     "link": "superior-cave-room",
     "img": "/superior-cave-room/1.webp",
+    "price": "180",
     "features": [
       "25 m2",
       "Access point for Internet",
@@ -245,11 +263,13 @@
     ]
   },
   {
+    "id": 10,
     "name": "Twin Stone Room",
     "description": "Getting attention by its built of unique stones of the Cappadocia Region and interior room niches. Heated by a floor-heating system, Superior Stone Room’s size is 20 m2. The maximum number of guests available in the Twin Bed Stone Room are 2 persons.",
     "description2": "",
     "link": "twin-stone-room",
     "img": "/twin-stone-room/1.webp",
+    "price": "200",
     "features": [
       "20 m2",
       "Access point for Internet",
@@ -273,11 +293,13 @@
     ]
   },
   {
+    "id": 11,
     "name": "Superior Cave Room - 203",
     "description": "Walls that are designated by different regional stones, our stone-carved room where you can experience the reflection of light on the rock.",
     "description2": "Heated by a floor-heating system, Superior Cave Room’s size is 27 m2. The maximum number of guests available in the Superior Cave Room is 3 persons.",
     "link": "superior-cave-room-tot",
     "img": "/superior-cave-room-tot/1.webp",
+    "price": "200",
     "features": [
       "27 m2",
       "Access point for Internet",
@@ -301,11 +323,13 @@
     ]
   },
   {
+    "id": 12,
     "name": "Superior Cave Room - 101",
     "description": "Stone-carved cave room, with its unique design. Heated by a floor-heating system, Superior Cave Room’s size is 30 m2.",
     "description2": "Heated by a floor-heating system, Superior Cave Room’s size is 30 m2. The maximum number of guests available in the Superior Cave Room is 3 persons.",
     "link": "superior-cave-room-ooo",
     "img": "/superior-cave-room-ooo/1.webp",
+    "price": "150",
     "features": [
       "30 m2",
       "Access point for Internet",

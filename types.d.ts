@@ -5,4 +5,6 @@ type Room = {
   link: string;
   img: string;
   features: string[];
+  price: string;
+  id: number;
 };

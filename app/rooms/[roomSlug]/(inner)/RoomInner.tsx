@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { MdFullscreen } from "react-icons/md";
 import { type CarouselApi } from "@/components/ui/carousel";
 import ImgSlider from "@/components/ImgSlider";
-import overflowHiddenBody from "@/utility/helpers";
+import { overflowHiddenBody } from "@/utility/helpers";
 import SimpleImgSlider from "@/components/SimpleImgSlider";
 
 export default function RoomInner({
